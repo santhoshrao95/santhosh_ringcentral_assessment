@@ -289,6 +289,8 @@ def main():
         - How to turn on indicator in MG Astor?
         - What is the fuel tank capacity of MG Astor?
         - How to adjust mirrors in MG Astor?
+        - Who is santhosh in mg?
+        - How to turn on indicator?
         """)
     
     with col2:
@@ -297,6 +299,8 @@ def main():
         - Which engine oil to use in Tiago?
         - What is the tire pressure for Tata Tiago?
         - How to change headlight in Tiago?
+        - Who is santhosh in tata?
+        - How to turn on indicator?
         """)
 
 
