@@ -26,37 +26,6 @@ def detect_car_model(query):
     
     return None
 
-# def is_query_factual_or_procedural(query,groq_client,groq_model):
-#     prompt = f"""You are an intelligent query parser who is expert in detecting car model mentioned in the query as it is.
-
-#         User Question: {query}
-
-#         Instructions:
-#         1. Answer the question clearly and concisely based on the manual excerpts above
-#         2. If the excerpts don't contain enough information, say so
-#         3. Reference specific page numbers when possible
-#         4. Be helpful and practical
-
-#         Answer:"""
-    
-#     # Call Groq API
-#     response = groq_client.chat.completions.create(
-#         model=GROQ_MODEL,
-#         messages=[
-#             {
-#                 "role": "system",
-#                 "content": "You are a helpful car manual assistant. Provide clear, accurate answers based on the manual excerpts provided."
-#             },
-#             {
-#                 "role": "user",
-#                 "content": prompt
-#             }
-#         ],
-#         temperature=0,
-#         max_tokens=500
-#     )
-    
-#     return response.choices[0].message.content.strip()
 
 def query_parser(query,groq_client):
 
@@ -64,6 +33,54 @@ def query_parser(query,groq_client):
     car_model = detect_car_model(query)
 
     return {"car_model":car_model,"type":query_type}
+
+def query_parser_rewriter(query, groq_client):
+    car_model = detect_car_model(query)
+    
+    if car_model:
+        rewritten_query = rewrite_query(query, groq_client)
+        return {"car_model": car_model, "rewritten_query": rewritten_query}
+    else:
+        result = detect_and_rewrite(query, groq_client)
+        return result
+
+def rewrite_query(query, groq_client):
+    prompt = config['query_rewriter_prompt'].format(query=query)
+    
+    response = groq_client.chat.completions.create(
+        model=config['generator_model_params']['model_name'],
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+        max_tokens=200
+    )
+    
+    return response.choices[0].message.content.strip()
+
+def detect_and_rewrite(query, groq_client):
+    prompt = config['car_detection_rewriter_prompt'].format(query=query)
+    
+    response = groq_client.chat.completions.create(
+        model=config['generator_model_params']['model_name'],
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+        max_tokens=200
+    )
+    
+    result_text = response.choices[0].message.content.strip()
+    
+    lines = result_text.split('\n')
+    car_model = None
+    rewritten_query = query
+    
+    for line in lines:
+        if line.startswith('CAR_MODEL:'):
+            model_value = line.replace('CAR_MODEL:', '').strip()
+            if model_value in ['MG_Astor', 'Tata_Tiago']:
+                car_model = model_value
+        elif line.startswith('QUERY:'):
+            rewritten_query = line.replace('QUERY:', '').strip()
+    
+    return {"car_model": car_model, "rewritten_query": rewritten_query}
 
 def collection_exists(strategy, weaviate_client) -> bool:
     if strategy not in CHUNKING_STRATEGIES:

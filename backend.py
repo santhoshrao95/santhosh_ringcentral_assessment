@@ -21,7 +21,7 @@ from models import (
     StrategiesResponse,
 )
 
-from utils import CHUNKING_STRATEGIES, query_parser, generate_answer, search_weaviate, collection_exists
+from utils import CHUNKING_STRATEGIES, query_parser, generate_answer, search_weaviate, collection_exists, query_parser_rewriter
 
 load_dotenv()
 
@@ -146,8 +146,10 @@ async def search(request: SearchRequest):
             detail=f"Collection not ready for strategy: {strategy}. Run ingestion script first."
         )
     
-    parser_result = query_parser(request.query,groq_client)
+    parser_result = query_parser_rewriter(request.query,groq_client)
     car_model = parser_result["car_model"]
+    query = parser_result["rewritten_query"]
+    # print(query)
     
     if not car_model:
         return SearchResponse(
@@ -161,7 +163,7 @@ async def search(request: SearchRequest):
         )
     
     try:
-        chunks = search_weaviate(request.query, embedding_model, weaviate_client, car_model, strategy, top_k=request.top_k, alpha=0.8, search_type=request.search_type)
+        chunks = search_weaviate(query, embedding_model, weaviate_client, car_model, strategy, top_k=request.top_k, alpha=0.8, search_type=request.search_type)
         
         if not chunks:
             return SearchResponse(
@@ -200,7 +202,7 @@ async def search(request: SearchRequest):
                 }
             )
         
-        answer = generate_answer(groq_client, request.query, chunks, car_model)
+        answer = generate_answer(groq_client, query, chunks, car_model)
         # print(answer)
         
         processing_time = time.time() - start_time
@@ -224,8 +226,3 @@ async def search(request: SearchRequest):
             status_code=500,
             detail=f"Error processing query: {str(e)}"
         )
-
-
-# ============================================================================
-# Run with: uvicorn backend:app --reload --host 0.0.0.0 --port 8000
-# ============================================================================

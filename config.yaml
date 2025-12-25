@@ -1,67 +1,89 @@
-generator_model_params:
-  model_name: "llama-3.1-8b-instant"
-  system_prompt: "You are a helpful car manual assistant. Provide clear, accurate answers based on the manual excerpts provided."
-  user_prompt_template: |
-    You are a helpful car manual assistant. Answer the user's question based ONLY on the provided manual excerpts.
+  generator_model_params:
+    model_name: "llama-3.1-8b-instant"
+    system_prompt: "You are a helpful car manual assistant. Provide clear, accurate answers based on the manual excerpts provided."
+    user_prompt_template: |
+      You are a helpful car manual assistant. Answer the user's question based ONLY on the provided manual excerpts.
 
-    Car Model: {car_model}
+      Car Model: {car_model}
 
-    Manual Excerpts:
-    {context}
+      Manual Excerpts:
+      {context}
 
-    User Question: {query}
+      User Question: {query}
 
-    Instructions:
-    1. Answer the question clearly and concisely based on the manual excerpts above
-    2. If the excerpts don't contain enough information, say so
-    3. Reference specific page number and chunk number from the provided context when possible
-    4. Be helpful and practical
+      Instructions:
+      1. Answer the question clearly and concisely based on the manual excerpts above
+      2. If the excerpts don't contain enough information, say so
+      3. Reference specific page number and chunk number from the provided context when possible
+      4. Be helpful and practical
+      5. If the question is not about car and its related help then politely say that you can answer only if the query is related to car and its relevant details are found in excerpts.
 
-    Answer:
-  temperature: 0
-  max_tokens: 500
+      Answer:
+    temperature: 0
+    max_tokens: 500
 
-embedding_model: "all-MiniLM-L6-v2"
+  embedding_model: "all-MiniLM-L6-v2"
 
-chunking_strategies:
-  basic_recursive:
-    collection_name: CarManual_BasicRecursive
-    display_name: "Basic Recursive (400 tokens, 50 overlap)"
-    description: "Standard recursive splitting - good all-around performance"
+  query_rewriter_prompt: |
+    Rewrite the following query only if its incomplete and does not have any meaning. 
+    Correct spelling and grammer. 
 
-  sentence_based:
-    collection_name: CarManual_SentenceBased
-    display_name: "Sentence-Based (3-5 sentences)"
-    description: "Preserves sentence boundaries - better coherence"
+    Original Query: {query}
 
-  semantic_based:
-    collection_name: CarManual_SemanticBased_75
-    display_name: "Semantic-Based (similarity threshold 0.75)"
-    description: "Groups sentences by semantic similarity - maintains topical coherence"
-    parameters:
-      similarity_threshold: 0.75
-      max_chunk_size: 800
+    Rewritten Query:
 
-  semantic_based_v2:
-    collection_name: CarManual_SemanticBased_50
-    display_name: "Semantic-Based (similarity threshold 0.50)"
-    description: "Groups sentences by semantic similarity - maintains topical coherence"
-    parameters:
-      similarity_threshold: 0.5
-      max_chunk_size: 800
+  car_detection_rewriter_prompt: |
+    Analyze the following query and:
+    1. Detect if it mentions a car model (MG Astor or Tata Tiago)
+    2. Rewrite the query to make it more effective for searching a car manual database
 
-  paragraph_based:
-    collection_name: CarManual_ParagraphBased
-    display_name: "Paragraph-Based (preserve structure)"
-    description: "Splits on paragraph boundaries - maintains document structure"
-    parameters:
-      max_chunk_size: 1000
-      merge_small_paragraphs: true
+    Return your response in this exact format:
+    CAR_MODEL: [MG_Astor or Tata_Tiago or None]
+    QUERY: [rewritten query]
 
-  landingai_based:
-    collection_name: CarManual_BasicLandingai
-    display_name: "LandingAI Document Parser"
-    description: "Uses LandingAI's advanced document extraction - preserves semantic structure with text, tables, and figures"
-    parameters:
-      min_chunk_length: 8
-      element_types: ["text", "table", "figure"]
+    Original Query: {query}
+
+  chunking_strategies:
+    landingai_based:
+      collection_name: CarManual_BasicLandingai
+      display_name: "LandingAI Parser"
+      description: "Uses LandingAI's advanced document extraction - preserves semantic structure with text, tables, and figures"
+      parameters:
+        min_chunk_length: 8
+        element_types: ["text", "table", "figure"]
+
+    basic_recursive:
+      collection_name: CarManual_BasicRecursive
+      display_name: "Basic Recursive (400 tokens, 50 overlap)"
+      description: "Standard recursive splitting - good all-around performance"
+
+    sentence_based:
+      collection_name: CarManual_SentenceBased
+      display_name: "Sentence-Based (3-5 sentences)"
+      description: "Preserves sentence boundaries - better coherence"
+
+    semantic_based:
+      collection_name: CarManual_SemanticBased_75
+      display_name: "Semantic-Based (similarity threshold 0.75)"
+      description: "Groups sentences by semantic similarity - maintains topical coherence"
+      parameters:
+        similarity_threshold: 0.75
+        max_chunk_size: 800
+
+    semantic_based_v2:
+      collection_name: CarManual_SemanticBased_50
+      display_name: "Semantic-Based (similarity threshold 0.50)"
+      description: "Groups sentences by semantic similarity - maintains topical coherence"
+      parameters:
+        similarity_threshold: 0.5
+        max_chunk_size: 800
+
+    paragraph_based:
+      collection_name: CarManual_ParagraphBased
+      display_name: "Paragraph-Based (preserve structure)"
+      description: "Splits on paragraph boundaries - maintains document structure"
+      parameters:
+        max_chunk_size: 1000
+        merge_small_paragraphs: true
+
+    
