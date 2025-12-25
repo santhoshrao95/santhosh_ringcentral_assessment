@@ -6,7 +6,7 @@ This application showcases a developer-friendly UI, comprehensive evaluation fra
 
 The app demonstrates a near-production setup using Weaviate as a vector database over embedded/in-app databases such as FAISS and ChromaDB.
 
-You can run this application using one of the 4 methods mentioned in `RUN_INSTRUCTIONS.md`, showcasing flexible deployment and shipment options.
+You can run this application using one of the 4 methods mentioned in ![RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md), showcasing flexible deployment and shipment options.
 
 This app includes agentic components such as query parser and query rewriter, with a slight trade-off in latency for improved quality.
 
