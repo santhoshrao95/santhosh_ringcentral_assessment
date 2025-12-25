@@ -80,6 +80,7 @@ start() {
         echo "Access the application at:"
         echo "  Backend API: http://localhost:8000/docs"
         echo "  Frontend UI: http://localhost:8501"
+        echo " Wait for few minutes to warm-up the backend then open the frontend ui using the above link"
         echo ""
         echo "To view logs: ./run-docker.sh logs"
     else

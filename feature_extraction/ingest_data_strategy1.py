@@ -44,6 +44,7 @@ def connect_to_weaviate():
     print("🔌 Connecting to Weaviate Cloud...")
     
     weaviate_url = os.getenv("WEAVIATE_URL")
+    print("weaviate_utl",weaviate_url)
     weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
     
     if not weaviate_url or not weaviate_api_key:

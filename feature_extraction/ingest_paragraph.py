@@ -16,7 +16,7 @@ load_dotenv()
 
 STRATEGY_NAME = "paragraph_based"
 COLLECTION_NAME = "CarManual_ParagraphBased"
-EMBEDDING_MODEL = " "
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 PDFS = {
     "MG_Astor": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",

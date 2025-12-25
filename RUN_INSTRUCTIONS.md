@@ -3,7 +3,7 @@
 ## Prerequisites
 - Python 3.10 (for menthods 1 and 2)
 - Docker (for methods 3 and 4)
-- .env file is included with API keys configured
+- .env file with required api keys. Check the zip file attachment or google doc link in the email.
 - the api keys in the .env file will expire post January 10, 2026.
 ---
 
