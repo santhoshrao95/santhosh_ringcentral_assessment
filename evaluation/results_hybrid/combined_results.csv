@@ -1,0 +1,9 @@
+strategy,top_k,search_type,threshold,hit_rate,avg_recall,avg_ndcg,mrr,map,avg_faithfulness,avg_key_facts_coverage,avg_answer_relevance,avg_context_recall,avg_answer_correctness,avg_latency_ms,min_latency_ms,max_latency_ms,p95_latency_ms,p99_latency_ms,estimated_cost_per_query,total_questions,source_file
+basic_recursive,15,hybrid,0.7,0.65,0.483,0.558,0.545,0.396,1.0,0.185,0.849,,0.67,13204.65,563.27,19351.87,18768.29,19235.15,7e-05,20,basic_recursive_k15.json
+basic_recursive,5,hybrid,0.85,0.133,0.089,0.106,0.094,0.066,0.633,0.219,0.843,0.633,0.639,4969.06,477.08,8241.81,8078.84,8203.17,2.7e-05,30,basic_recursive_k5.json
+landingai_based,15,hybrid,0.7,0.5,0.367,0.317,0.283,0.175,1.0,0.108,0.839,,0.622,12503.35,1181.53,20273.17,18007.55,19820.05,6.2e-05,20,landingai_based_k15.json
+landingai_based,5,semantic,0.7,0.35,0.233,0.239,0.196,0.122,0.0,0.048,0.849,,0.573,3017.23,434.79,7227.51,7022.88,7186.58,2.4e-05,20,landingai_based_k5.json
+paragraph_based,15,hybrid,0.7,0.3,0.192,0.263,0.25,0.167,,0.209,0.856,,0.666,36445.82,9492.21,52225.0,47093.92,51198.78,0.000184,20,paragraph_based_k15.json
+paragraph_based,5,hybrid,0.85,0.033,0.033,0.033,0.033,0.033,0.833,0.239,0.835,0.0,0.649,11629.18,554.07,19863.66,18354.98,19664.59,6e-05,30,paragraph_based_k5.json
+semantic_based,15,hybrid,0.7,0.6,0.467,0.464,0.438,0.316,,0.173,0.853,,0.629,7294.77,534.53,15970.97,13929.87,15562.75,3.2e-05,20,semantic_based_k15.json
+semantic_based,5,hybrid,0.85,0.267,0.156,0.2,0.178,0.107,0.467,0.179,0.844,0.567,0.633,3167.39,492.81,7737.6,6888.45,7512.47,1.7e-05,30,semantic_based_k5.json

@@ -1,0 +1,2485 @@
+{
+  "config": {
+    "top_k": 15,
+    "strategy": "semantic_based",
+    "search_type": "hybrid",
+    "threshold": 0.7,
+    "metrics_evaluated": [
+      "retriever",
+      "generator",
+      "end_to_end"
+    ],
+    "timestamp": "2025-12-24T18:49:26.402061",
+    "total_questions": 20
+  },
+  "individual_results": [
+    {
+      "query_id": "TIAGO_Q1",
+      "query": "What engine oil specification is recommended for Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The recommended engine oil specification for Tata Tiago is 5W30 ACEA A5/B5 conforming to TATA SS6579. Recommended brands include CASTROL Magnatec Professional T 5W30 and PETRONAS TATA MOTORS Genuine Oil Engine Oil Synth 5W30. The capacity is 3.5 litres for petrol variant and 4 litres for diesel variant.",
+        "key_facts": [
+          "5W30 ACEA A5/B5",
+          "TATA SS6579",
+          "CASTROL Magnatec Professional T 5W30",
+          "PETRONAS TATA MOTORS Genuine Oil",
+          "3.5 litres for petrol",
+          "4 litres for diesel"
+        ],
+        "relevant_chunks": [
+          "Engine Oil 5W30 ACEA A5/B5 TATA SS6579 CASTROL - Magnatec Professional T 5W30 PETRONAS TATA MOTORS Genuine Oil – Engine Oil Synth 5W30 3.5 Litres (Petrol) 4 Litres (Diesel)",
+          "Use following genuine fluids, coolants and lubricants recommended for optimum performance of your vehicle."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "Engine Oil  \n5W30 ACEA A5/B5 \nTATA SS6579 \nCASTROL - Magnatec Professional T 5W30 \nPETRONAS TATA MOTORS Genuine Oil – \nEngine Oil Synth 5W30   \n3.5 Litres (Petrol) \n4 Litres (Diesel) \n  \nCoolant (Pre-mixed) \n(Antifreeze agent + Soft \nwater 40 : 60 ratio) \nClass II/JIS K2234 \nTATA SS7700S1 \nSUNSTAR CCI - Golden Cruiser LLC 2200NP \nIOCL TATA MOTORS GENUINE COOLANT \nKOOL PLUS \n4 Litres (Petrol) \n5 Litres (Diesel) \nTransaxle Oil \nEP80W LL (Next Gen) \nTATA SS6582 \nPETRONAS - TATA MOTORS Genuine Oil – \nGear Oil New Gen 80 EP LL \nIOCL TATA MOTORS GENUINE GEAR OIL \n80WLL \n1.8 Litres \nBrake Fluid \nIS 8654 Type II DOT 4 \nTATA SS7711 \nPETRONAS - Tutela - TOP 45 DOT 4 \nCASTROL - UBF DOT 4 \nSUNSTAR CCI - Golden Cruiser Brake Fluid \nDOT 4 \n0.5 Litres",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.84
+          },
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n127 \nLubricant Specification \nUse following genuine fluids, coolants and lubricants recommended for optimum performance of your vehicle.",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.56
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.55
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n125 \nFuel Specification \nFuel (Diesel) \nNormal grade BS IV compliant diesel conforming to IS1460 \nor EN 590 or equivalent is recommended to be used as fuel.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": " Ensure that fuel filter, oil filter and breather are checked \nperiodically and replaced, if required, as recommended by \nTATA MOTORS.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "TECHNICAL INFORMATION \n128 \nTechnical Specifications \nParameter \nDiesel \nPetrol \nEngine \n \n \nModel/type \n1.05L  REVOTORQ \n1.2L REVOTRON \nCapacity \n1047 cc \n1199 cc \nMax.",
+            "page_number": 129,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "Contact TATA \nMOTORS assistance before starting the engine.",
+            "page_number": 43,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.47
+          },
+          {
+            "text": "Recommended fuel specifications \nParameter \n    Unit \n BS IV \nCetane Number (min) \nC N \n51 \nSulphur content  \nmg/kg \n50 \nLubricity (HFRR)  \nmicron \n460 \n \nNOTE \nWhere oxidation catalytic converter is fitted, it is manda-\ntory to use Diesel fuel with sulphur contents as given \nabove.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "MAINTENANCE \n108 \nEngine Oil Level  \nWarm up the engine to normal operating \ntemperature.",
+            "page_number": 109,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "A number of features \nhave been incorporated in TATA MOTORS passenger vehicles \nwhich have been designed to ensure environmental compati-\nbility throughout the life cycle of the vehicle.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "This makes it suitable for petrol and diesel engine applications \nResulting in: \n Improved engine compression \n Increased power and increased fuel economy \n Reduced start-up wear \n Increased engine life, especially under severe service conditions \n Reduced emissions and oil consumption \n Improved power & performance of older engines \n Prevention of sludge, gum and varnish formation on engine parts both petrol & diesel engines",
+            "page_number": 145,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "Even after 0.5 km distance covered for \nparticular trip, if Average Fuel Economy \nis displayed as ‘--.--‘, then take your vehi-\ncle to TATA MOTORS Authorized Service \nCentre.",
+            "page_number": 38,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.36
+          },
+          {
+            "text": "TATA MOTORS has tied up with M/s Autokrom, M/s 3M & M/s Wuerth for this world class treatment at affordable prices.",
+            "page_number": 142,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.35
+          }
+        ],
+        "generated_answer": "The recommended engine oil specification for Tata Tiago is 5W30 ACEA A5/B5, as mentioned on Page 128 of the manual.",
+        "latency_ms": 1084.3
+      },
+      "scores": {
+        "key_facts_coverage": 0.16666666666666666,
+        "answer_relevance": 0.8993124961853027,
+        "answer_correctness": 0.6705690048359059,
+        "f1_score": 0.40740740740740744,
+        "semantic_similarity": 0.9337306022644043,
+        "estimated_cost": 4.1525000000000006e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q2",
+      "query": "What are the engine specifications for Tata Tiago diesel variant?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The Tata Tiago diesel variant has a 1.05L REVOTORQ engine with a capacity of 1047 cc. It produces a maximum engine output of 70 PS at 4000 +/-50 rpm and maximum torque of 140 Nm at 1800-3000 rpm.",
+        "key_facts": [
+          "1.05L REVOTORQ",
+          "1047 cc",
+          "70 PS @ 4000 +/-50 rpm",
+          "140 Nm @ 1800-3000 rpm"
+        ],
+        "relevant_chunks": [
+          "Model/type 1.05L REVOTORQ Capacity 1047 cc Max. Engine output 70 PS @ 4000 +/-50 rpm Max. Torque 140 Nm @ 1800 - 3000 rpm",
+          "Parameter Diesel Petrol Engine Model/type 1.05L REVOTORQ 1.2L REVOTRON"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "TECHNICAL INFORMATION \n128 \nTechnical Specifications \nParameter \nDiesel \nPetrol \nEngine \n \n \nModel/type \n1.05L  REVOTORQ \n1.2L REVOTRON \nCapacity \n1047 cc \n1199 cc \nMax.",
+            "page_number": 129,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.99
+          },
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "Engine Oil  \n5W30 ACEA A5/B5 \nTATA SS6579 \nCASTROL - Magnatec Professional T 5W30 \nPETRONAS TATA MOTORS Genuine Oil – \nEngine Oil Synth 5W30   \n3.5 Litres (Petrol) \n4 Litres (Diesel) \n  \nCoolant (Pre-mixed) \n(Antifreeze agent + Soft \nwater 40 : 60 ratio) \nClass II/JIS K2234 \nTATA SS7700S1 \nSUNSTAR CCI - Golden Cruiser LLC 2200NP \nIOCL TATA MOTORS GENUINE COOLANT \nKOOL PLUS \n4 Litres (Petrol) \n5 Litres (Diesel) \nTransaxle Oil \nEP80W LL (Next Gen) \nTATA SS6582 \nPETRONAS - TATA MOTORS Genuine Oil – \nGear Oil New Gen 80 EP LL \nIOCL TATA MOTORS GENUINE GEAR OIL \n80WLL \n1.8 Litres \nBrake Fluid \nIS 8654 Type II DOT 4 \nTATA SS7711 \nPETRONAS - Tutela - TOP 45 DOT 4 \nCASTROL - UBF DOT 4 \nSUNSTAR CCI - Golden Cruiser Brake Fluid \nDOT 4 \n0.5 Litres",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.7
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.63
+          },
+          {
+            "text": "MAINTENANCE \n106 \nEngine Compartment - Diesel \n \n1.",
+            "page_number": 107,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.58
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.56
+          },
+          {
+            "text": "Contact TATA \nMOTORS assistance before starting the engine.",
+            "page_number": 43,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.55
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "3 \n \nDear Customer, \n \nWelcome to the TATA MOTORS family.",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n125 \nFuel Specification \nFuel (Diesel) \nNormal grade BS IV compliant diesel conforming to IS1460 \nor EN 590 or equivalent is recommended to be used as fuel.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "A number of features \nhave been incorporated in TATA MOTORS passenger vehicles \nwhich have been designed to ensure environmental compati-\nbility throughout the life cycle of the vehicle.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "CAR CARE AND VALUE ADDED SERVICES \n140 \nTATA MOTORS has tied up with M/s Wuerth, M/s Autokrom, M/s 3M India Lt d & M/s Bardahl for these world class treatment \nat affordable prices.",
+            "page_number": 141,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Recommended fuel specifications \nParameter \n    Unit \n BS IV \nCetane Number (min) \nC N \n51 \nSulphur content  \nmg/kg \n50 \nLubricity (HFRR)  \nmicron \n460 \n \nNOTE \nWhere oxidation catalytic converter is fitted, it is manda-\ntory to use Diesel fuel with sulphur contents as given \nabove.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          }
+        ],
+        "generated_answer": "The engine specifications for the Tata Tiago diesel variant are as follows:\n\n- Engine Model/Type: 1.05L REVOTORQ\n- Engine Capacity: 1047 cc\n- Fuel Specification: Normal grade BS IV compliant diesel conforming to IS1460 or EN 590 or equivalent (Page 126)\n\nNote: The manual excerpts do not provide detailed information about the engine specifications beyond the above-mentioned details.",
+        "latency_ms": 650.09
+      },
+      "scores": {
+        "key_facts_coverage": 0.5,
+        "answer_relevance": 0.8848057985305786,
+        "answer_correctness": 0.535808908861953,
+        "f1_score": 0.23376623376623376,
+        "semantic_similarity": 0.8378515839576721,
+        "estimated_cost": 3.9955000000000006e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q3",
+      "query": "What is the warranty period for Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The warranty for Tata Tiago is for a period of 24 months from the date of sale or a mileage of 75,000 km, whichever occurs earlier.",
+        "key_facts": [
+          "24 months",
+          "75,000 km",
+          "whichever occurs earlier",
+          "from date of sale"
+        ],
+        "relevant_chunks": [
+          "This warranty shall be for a period of 24 months from the date of sale of the car or a mileage of 75,000 Kms whichever occurs earlier.",
+          "We WARRANT each TATA TIAGO vehicle and parts thereof manufactured by us to be free from defect in material and workmanship subject to the following terms and conditions"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.87
+          },
+          {
+            "text": "CAR CARE AND VALUE ADDED SERVICES \n136 \nExtended Warranty \nTATA MOTORS recommends the purchase of its extended warranty program.",
+            "page_number": 137,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.65
+          },
+          {
+            "text": "Warranty claims can be settled by any TATA MOTORS Author-\nised Dealer Workshop or TATA MOTORS Authorised Service \nCentre (TASC).",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.63
+          },
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Always carry out prescribed service / maintenance work as well as any required repairs at an authorized TATA MOTORS Dealers \nor Authorized Service Centre’s (TASCs).",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.48
+          },
+          {
+            "text": "This warranty shall be for a period of 24 months from the \ndate of sale of the car or a mileage of 75,000 Kms which-\never occurs earlier.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.47
+          },
+          {
+            "text": "Extended Warranty Booklet & Cover Note \nThe Extended Warranty booklet and cover note is the basis of the contract between TATA MOTORS LIMITED and the Owner of the \nvehicle shown on the Extended Warranty booklet.",
+            "page_number": 137,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "3 \n \nDear Customer, \n \nWelcome to the TATA MOTORS family.",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Cen-\ntre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.4
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.4
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre \nimmediately.",
+            "page_number": 44,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          }
+        ],
+        "generated_answer": "The warranty period for Tata Tiago is 24 months from the date of sale of the car or a mileage of 75,000 Kms, whichever occurs earlier. (Refer to Page 148)",
+        "latency_ms": 534.53
+      },
+      "scores": {
+        "key_facts_coverage": 0.75,
+        "answer_relevance": 0.8651926517486572,
+        "answer_correctness": 0.9150253147520917,
+        "f1_score": 0.8510638297872339,
+        "semantic_similarity": 0.9789867997169495,
+        "estimated_cost": 2.4067500000000003e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q4",
+      "query": "What type of fuel should be used for Tata Tiago petrol variant?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "For Tata Tiago petrol variant, unleaded regular grade petrol conforming to IS 2796:2008 and BS IV specification with RON (Research Octane Number) not less than 91 is recommended. Always use petrol of correct specification in a vehicle fitted with catalytic converter, as even a single fill of leaded petrol will seriously damage the catalytic converter.",
+        "key_facts": [
+          "Unleaded regular grade petrol",
+          "IS 2796:2008",
+          "BS IV specification",
+          "RON not less than 91",
+          "Do not use leaded petrol"
+        ],
+        "relevant_chunks": [
+          "Unleaded regular grade petrol conforming to IS 2796:2008 and BS IV specification and RON not less than 91 is recommended.",
+          "Always use petrol of a correct specification in a vehicle fitted with catalytic converter. Even single fill of leaded petrol will seriously damage the catalytic converter."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "NOTE \nAlways use petrol of a correct specification in a vehicle \nfitted with catalytic converter.",
+            "page_number": 127,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n125 \nFuel Specification \nFuel (Diesel) \nNormal grade BS IV compliant diesel conforming to IS1460 \nor EN 590 or equivalent is recommended to be used as fuel.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.79
+          },
+          {
+            "text": "TECHNICAL INFORMATION \n126 \nFuel (Petrol) \nUnleaded regular grade petrol conforming to IS 2796:2008 \nand BS IV specification and RON not less than 91 is recom-\nmended.",
+            "page_number": 127,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.68
+          },
+          {
+            "text": "Engine Oil  \n5W30 ACEA A5/B5 \nTATA SS6579 \nCASTROL - Magnatec Professional T 5W30 \nPETRONAS TATA MOTORS Genuine Oil – \nEngine Oil Synth 5W30   \n3.5 Litres (Petrol) \n4 Litres (Diesel) \n  \nCoolant (Pre-mixed) \n(Antifreeze agent + Soft \nwater 40 : 60 ratio) \nClass II/JIS K2234 \nTATA SS7700S1 \nSUNSTAR CCI - Golden Cruiser LLC 2200NP \nIOCL TATA MOTORS GENUINE COOLANT \nKOOL PLUS \n4 Litres (Petrol) \n5 Litres (Diesel) \nTransaxle Oil \nEP80W LL (Next Gen) \nTATA SS6582 \nPETRONAS - TATA MOTORS Genuine Oil – \nGear Oil New Gen 80 EP LL \nIOCL TATA MOTORS GENUINE GEAR OIL \n80WLL \n1.8 Litres \nBrake Fluid \nIS 8654 Type II DOT 4 \nTATA SS7711 \nPETRONAS - Tutela - TOP 45 DOT 4 \nCASTROL - UBF DOT 4 \nSUNSTAR CCI - Golden Cruiser Brake Fluid \nDOT 4 \n0.5 Litres",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.64
+          },
+          {
+            "text": "Make sure that only TATA MOTORS rec-\nommended coolant is used.",
+            "page_number": 111,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.62
+          },
+          {
+            "text": "If fuel cap needs replacement, ensure \nthat it is replaced by a genuine cap at \nTATA MOTORS Authorized Service Centre \nonly.",
+            "page_number": 28,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "Even after 0.5 km distance covered for \nparticular trip, if Average Fuel Economy \nis displayed as ‘--.--‘, then take your vehi-\ncle to TATA MOTORS Authorized Service \nCentre.",
+            "page_number": 38,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.57
+          },
+          {
+            "text": "Recommended fuel specifications \nParameter \n    Unit \n BS IV \nCetane Number (min) \nC N \n51 \nSulphur content  \nmg/kg \n50 \nLubricity (HFRR)  \nmicron \n460 \n \nNOTE \nWhere oxidation catalytic converter is fitted, it is manda-\ntory to use Diesel fuel with sulphur contents as given \nabove.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.56
+          },
+          {
+            "text": "It is always recommended to use correct fuel to get \noptimum emission performance.",
+            "page_number": 127,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": " Ensure that fuel filter, oil filter and breather are checked \nperiodically and replaced, if required, as recommended by \nTATA MOTORS.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": "A number of features \nhave been incorporated in TATA MOTORS passenger vehicles \nwhich have been designed to ensure environmental compati-\nbility throughout the life cycle of the vehicle.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "Use of any other diesel fuel can increase the pol-\nlutants.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "TECHNICAL INFORMATION \n128 \nTechnical Specifications \nParameter \nDiesel \nPetrol \nEngine \n \n \nModel/type \n1.05L  REVOTORQ \n1.2L REVOTRON \nCapacity \n1047 cc \n1199 cc \nMax.",
+            "page_number": 129,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre to drain \nthe water immediately to avoid serious damage to the fuel injec-\ntion system.",
+            "page_number": 42,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.48
+          }
+        ],
+        "generated_answer": "For the Tata Tiago petrol variant, the recommended fuel specification is Unleaded regular grade petrol conforming to IS 2796:2008 and BS IV specification with a RON not less than 91 (Page 127).",
+        "latency_ms": 8025.45
+      },
+      "scores": {
+        "key_facts_coverage": 0.8,
+        "answer_relevance": 0.8076211214065552,
+        "answer_correctness": 0.7863111044909503,
+        "f1_score": 0.6486486486486486,
+        "semantic_similarity": 0.923973560333252,
+        "estimated_cost": 3.79725e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q5",
+      "query": "What is the brake fluid specification for Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The brake fluid specification for Tata Tiago is IS 8654 Type II DOT 4 conforming to TATA SS7711. Recommended brands include PETRONAS Tutela TOP 45 DOT 4, CASTROL UBF DOT 4, and SUNSTAR CCI Golden Cruiser Brake Fluid DOT 4. The capacity is 0.5 litres.",
+        "key_facts": [
+          "IS 8654 Type II DOT 4",
+          "TATA SS7711",
+          "0.5 litres",
+          "PETRONAS Tutela TOP 45 DOT 4",
+          "CASTROL UBF DOT 4"
+        ],
+        "relevant_chunks": [
+          "Brake Fluid IS 8654 Type II DOT 4 TATA SS7711 PETRONAS - Tutela - TOP 45 DOT 4 CASTROL - UBF DOT 4 SUNSTAR CCI - Golden Cruiser Brake Fluid DOT 4 0.5 Litres"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n109 \nBrake Fluid Level \n \nThe level of the brake fluid should be be-\ntween the ‘MIN’ and ‘MAX’ marks on the \nside of the brake fluid container.",
+            "page_number": 110,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "Engine Oil  \n5W30 ACEA A5/B5 \nTATA SS6579 \nCASTROL - Magnatec Professional T 5W30 \nPETRONAS TATA MOTORS Genuine Oil – \nEngine Oil Synth 5W30   \n3.5 Litres (Petrol) \n4 Litres (Diesel) \n  \nCoolant (Pre-mixed) \n(Antifreeze agent + Soft \nwater 40 : 60 ratio) \nClass II/JIS K2234 \nTATA SS7700S1 \nSUNSTAR CCI - Golden Cruiser LLC 2200NP \nIOCL TATA MOTORS GENUINE COOLANT \nKOOL PLUS \n4 Litres (Petrol) \n5 Litres (Diesel) \nTransaxle Oil \nEP80W LL (Next Gen) \nTATA SS6582 \nPETRONAS - TATA MOTORS Genuine Oil – \nGear Oil New Gen 80 EP LL \nIOCL TATA MOTORS GENUINE GEAR OIL \n80WLL \n1.8 Litres \nBrake Fluid \nIS 8654 Type II DOT 4 \nTATA SS7711 \nPETRONAS - Tutela - TOP 45 DOT 4 \nCASTROL - UBF DOT 4 \nSUNSTAR CCI - Golden Cruiser Brake Fluid \nDOT 4 \n0.5 Litres",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.7
+          },
+          {
+            "text": "For location of Brake Fluid Container \nand filling cap, please refer respective \nEngine Compartment pages.",
+            "page_number": 110,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.63
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.63
+          },
+          {
+            "text": "Operation \nKms \nPDI \n1.5K \n7.5K \n15K \n22.5K \n30K \n37.5K \n45K \n52.5K \n60K \n67.5K \n75K \n82.5K \n90K \n97.5K \n105K \n112.5K \n120K \n127.5K \n135K \n142.5K \n150K \nMonths \n0 \n2 \n6 \n12 \n18 \n24 \n30 \n36 \n42 \n48 \n54 \n60 \n66 \n72 \n78 \n84 \n90 \n96 \n102 \n108 \n114 \n120 \n \nGeneral \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n1 \nWash the vehicle \n& Clean Conden-\nser Fins \nEvery  \nService \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n2 \nCheck & Top up \nFluids (If re-\nquired): Transaxle \nOil, Coolant, \nBrake Fluid, Bat-\ntery Electrolyte, \nWind Screen \nwasher fluid.",
+            "page_number": 119,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.62
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.54
+          },
+          {
+            "text": "Do not allow brake fluid to splash \nor spill on the paint surface as it \nwill damage the paint.",
+            "page_number": 110,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "Replace if \nnecessary \n15K / \n12M \n \n \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n2 \nReplace brake \nfluid  Check brake \nsystem compo-\nnents for Leak-\nages \n # 45K / \n24M \n \n \n \n \n \n \n \n● \n \n \n \n \n \n● \n \n \n \n \n \n● \n \n \n3 \nInspect & if nec-\nessary adjust \nhandbrake set-\nting \n15K / \n12M \n \n \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \nWheels & Tyres \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n1 \nCheck & Adjust \nWheel alignment \n # 15K / \n18M \n \n \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n \n● \n2 \nCheck for Tyre \npressure, condi-\ntion & rotate \n# 7.5K / \n12M \n \n \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n● \n# - Kms or Months whichever occurs earlier",
+            "page_number": 123,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n127 \nLubricant Specification \nUse following genuine fluids, coolants and lubricants recommended for optimum performance of your vehicle.",
+            "page_number": 128,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "NOTE \nDo not allow brake fluid to make \ncontact with the skin or eyes.",
+            "page_number": 110,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "If the \nlevel falls below the ‘MIN’ mark, add rec-\nommended brake fluid.",
+            "page_number": 110,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre to drain \nthe water immediately to avoid serious damage to the fuel injec-\ntion system.",
+            "page_number": 42,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "Operation \nKms \nPDI \n1.5K \n7.5K \n15K \n22.5K \n30K \n37.5K \n45K \n52.5K \n60K \n67.5K \n75K \n82.5K \n90K \n97.5K \n105K \n112.5K \n120K \n127.5K \n135K \n142.5K \n150K \nMonths \n0 \n2 \n6 \n12 \n18 \n24 \n30 \n36 \n42 \n48 \n54 \n60 \n66 \n72 \n78 \n84 \n90 \n96 \n102 \n108 \n114 \n120 \n \nTransaxle \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n1 \nReplace transaxle \noil \n75K / \n60M \n \n \n \n \n \n \n \n \n \n \n \n● \n \n \n \n \n \n \n \n \n \n● \n \nBrakes \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n1 \nCheck front brake \npads & rear brake \nlinings.",
+            "page_number": 123,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          }
+        ],
+        "generated_answer": "The brake fluid specification for Tata Tiago is IS 8654 Type II DOT 4. \n\nReference: Page 128, Lubricant Specification",
+        "latency_ms": 15970.97
+      },
+      "scores": {
+        "key_facts_coverage": 0.2,
+        "answer_relevance": 0.8866036534309387,
+        "answer_correctness": 0.6988298296928406,
+        "f1_score": 0.5,
+        "semantic_similarity": 0.8976596593856812,
+        "estimated_cost": 5.0565e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q6",
+      "query": "How do I turn on the indicators in Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "To turn on the indicators in Tata Tiago: For left turn signal, move the right-hand stalk lever fully upward. For right turn signal, move the lever fully downward. When the turn is completed, the signal will cancel automatically and the lever will return to its normal position. For lane change signal, move the lever slightly up or down without full latching, and the turn signal will flash 3 times automatically.",
+        "key_facts": [
+          "Left turn: move lever fully upward",
+          "Right turn: move lever fully downward",
+          "Auto-cancels when turn completed",
+          "Lane change: slight movement, 3 flashes"
+        ],
+        "relevant_chunks": [
+          "1. Left Turn signal - Move the lever fully upward. 2. Right Turn signal - Move the lever fully downward.",
+          "When the turn is completed, the signal will cancel and the lever will return to its normal position.",
+          "To signal a lane change, move the lever slightly up or down respective to the point where the turn signal light begins to flash, but the lever does not latch. The turn signal will flash 3 times automatically."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "Take your vehicle to the nearest \nTATA MOTORS Authorised service \nstation if the symbol starts blinking.",
+            "page_number": 34,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.75
+          },
+          {
+            "text": "Contact TATA \nMOTORS assistance before starting the engine.",
+            "page_number": 43,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Cen-\ntre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.52
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre \nimmediately.",
+            "page_number": 44,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Contact a TATA \nMOTORS Authorised Service Centre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": " Turn ‘ON’ the side indicators at least \n30 meters before taking a turn or \nchanging the lane.",
+            "page_number": 10,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "Contact a TATA MOTORS \n   Authorized Service Centre \nIgnition ON \nBlinking \nUnlocked \n-  Contact a TATA MOTORS Authorized Service Centre immediately",
+            "page_number": 18,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Have your vehicle serviced regularly \nfrom TATA MOTORS Authorized Service \nCentre.",
+            "page_number": 106,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": " Use side indicators for lane change \nor turning.",
+            "page_number": 12,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": " Ensure that fuel filter, oil filter and breather are checked \nperiodically and replaced, if required, as recommended by \nTATA MOTORS.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "An indicator on the switch will be illumi-\nnated when the front fog light is ‘ON’.",
+            "page_number": 50,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          }
+        ],
+        "generated_answer": "To turn on the indicators in your Tata Tiago, follow these steps:\n\n1. Turn 'ON' the side indicators at least 30 meters before taking a turn or changing the lane. (Page 10)\n2. Use side indicators for lane change or turning. (Page 12)\n\nNote: There is no specific instruction on how to physically turn on the indicators in the provided manual excerpts. However, based on general knowledge, you can usually turn on the indicators by pressing the corresponding switch on the steering column.",
+        "latency_ms": 6019.22
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8235170841217041,
+        "answer_correctness": 0.5687827240018284,
+        "f1_score": 0.23529411764705882,
+        "semantic_similarity": 0.9022713303565979,
+        "estimated_cost": 2.52075e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q7",
+      "query": "What is the fuel tank capacity of Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The fuel tank capacity of Tata Tiago is 35 litres for both petrol and diesel variants.",
+        "key_facts": [
+          "35 litres",
+          "Same for petrol and diesel"
+        ],
+        "relevant_chunks": [
+          "Fuel tank Capacity 35 liters 35 liters"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "Even after 0.5 km distance covered for \nparticular trip, if Average Fuel Economy \nis displayed as ‘--.--‘, then take your vehi-\ncle to TATA MOTORS Authorized Service \nCentre.",
+            "page_number": 38,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.74
+          },
+          {
+            "text": "TECHNICAL INFORMATION \n128 \nTechnical Specifications \nParameter \nDiesel \nPetrol \nEngine \n \n \nModel/type \n1.05L  REVOTORQ \n1.2L REVOTRON \nCapacity \n1047 cc \n1199 cc \nMax.",
+            "page_number": 129,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "Fuel Gauge \nWhen the ignition switch is in “ON” posi-\ntion, fuel gauge gives an approximate in-\ndication of the amount of fuel in the fuel \ntank.",
+            "page_number": 33,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.56
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre to drain \nthe water immediately to avoid serious damage to the fuel injec-\ntion system.",
+            "page_number": 42,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "If fuel cap needs replacement, ensure \nthat it is replaced by a genuine cap at \nTATA MOTORS Authorized Service Centre \nonly.",
+            "page_number": 28,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "The DTE will update with new value when \nfuel is added more than 4 Litres at a \ntime.",
+            "page_number": 38,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.48
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.47
+          },
+          {
+            "text": "TECHNICAL INFORMATION \n126 \nFuel (Petrol) \nUnleaded regular grade petrol conforming to IS 2796:2008 \nand BS IV specification and RON not less than 91 is recom-\nmended.",
+            "page_number": 127,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Overfilling the fuel \ntank could damage the fuel sys-\ntem.",
+            "page_number": 28,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Recommended fuel specifications \nParameter \n    Unit \n BS IV \nCetane Number (min) \nC N \n51 \nSulphur content  \nmg/kg \n50 \nLubricity (HFRR)  \nmicron \n460 \n \nNOTE \nWhere oxidation catalytic converter is fitted, it is manda-\ntory to use Diesel fuel with sulphur contents as given \nabove.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "TEHCNICAL INFORMATION \n125 \nFuel Specification \nFuel (Diesel) \nNormal grade BS IV compliant diesel conforming to IS1460 \nor EN 590 or equivalent is recommended to be used as fuel.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": " Ensure that fuel filter, oil filter and breather are checked \nperiodically and replaced, if required, as recommended by \nTATA MOTORS.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "Ratio for mix-\ning of supplementary fuel and diesel are shown in the table.",
+            "page_number": 126,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          }
+        ],
+        "generated_answer": "Unfortunately, the manual excerpts provided do not contain information about the fuel tank capacity of the Tata Tiago.",
+        "latency_ms": 8212.89
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8622421026229858,
+        "answer_correctness": 0.6221235394477844,
+        "f1_score": 0.375,
+        "semantic_similarity": 0.8692470788955688,
+        "estimated_cost": 2.9072500000000003e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q8",
+      "query": "What is the wheelbase of Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The wheelbase of Tata Tiago is 2400 mm for both petrol and diesel variants.",
+        "key_facts": [
+          "2400 mm",
+          "Same for both variants"
+        ],
+        "relevant_chunks": [
+          "Wheel base 2400 2400",
+          "Main chassis dimension (in mm) Wheel base 2400 2400"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.73
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.69
+          },
+          {
+            "text": "3 \n \nDear Customer, \n \nWelcome to the TATA MOTORS family.",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.65
+          },
+          {
+            "text": "TATA MOTORS 24X7 Roadside Assistance Program offers tech-\nnical help in the event of a breakdown.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.59
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.52
+          },
+          {
+            "text": "CUSTOMER ASSISTANCE \n2 \nIn our constant endeavour to provide assistance and complete \nservice backup, TATA MOTORS has established an all India cus-\ntomer assistance centre.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": " \nTATA MOTORS Limited reserves the right to introduce changes in the design, equipment and technical features without any \nobligation to install them on the vehicles previously sold.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Cen-\ntre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "In \nthe premium plan, this includes 2 in-\nstances of towing upto the nearest TATA \nMOTORS authorised workshop.",
+            "page_number": 103,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "In case of any frontal damage to \nyour vehicle or any maintenance \nrequired to be performed should \nbe done by TATA MOTORS Author-\nised Service Centre only.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Always carry out prescribed service / maintenance work as well as any required repairs at an authorized TATA MOTORS Dealers \nor Authorized Service Centre’s (TASCs).",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Servicing of the vehicle can be done at any TATA MOTORS \nAuthorised Dealer Workshop or TATA MOTORS Authorised \nService Centre (TASC).",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          }
+        ],
+        "generated_answer": "Unfortunately, the provided manual excerpts do not contain information about the wheelbase of the Tata Tiago.",
+        "latency_ms": 6141.11
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.880294680595398,
+        "answer_correctness": 0.5542486991201128,
+        "f1_score": 0.2857142857142857,
+        "semantic_similarity": 0.8227831125259399,
+        "estimated_cost": 2.47425e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q9",
+      "query": "What type of clutch does Tata Tiago have?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "Tata Tiago has a single plate dry friction diaphragm type clutch with an outside diameter of 200 mm.",
+        "key_facts": [
+          "Single plate dry friction diaphragm type",
+          "200 mm diameter"
+        ],
+        "relevant_chunks": [
+          "Clutch Type Single plate dry friction diaphragm type Outside diameter of clutch 200 mm"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "Torque \n140 Nm @ 1800 - 3000 rpm \n114.4 Nm @ 3500 +/- 70 rpm \nClutch \n \n \nType \nSingle plate dry friction diaphragm type \nOutside diameter of clutch \n200 mm \nTransaxle \n \n \nModel \nTA65* \nType \nSynchromesh with overdrive \nNo.",
+            "page_number": 129,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.77
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.59
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": " Such defective parts which have been replaced will become property of TATA MOTORS LIMITED.",
+            "page_number": 138,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "TATA MOTORS has tied up with M/s Autokrom, M/s 3M & M/s Wuerth for this world class treatment at affordable prices.",
+            "page_number": 142,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Always carry out prescribed service / maintenance work as well as any required repairs at an authorized TATA MOTORS Dealers \nor Authorized Service Centre’s (TASCs).",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "Have your vehicle serviced regularly \nfrom TATA MOTORS Authorized Service \nCentre.",
+            "page_number": 106,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "Servicing of the vehicle can be done at any TATA MOTORS \nAuthorised Dealer Workshop or TATA MOTORS Authorised \nService Centre (TASC).",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "3 \n \nDear Customer, \n \nWelcome to the TATA MOTORS family.",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "TATA MOTORS has tied up with M/s Wurth and M/s M/s Autokrom for this world class treatment at affordable prices.",
+            "page_number": 143,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "A number of features \nhave been incorporated in TATA MOTORS passenger vehicles \nwhich have been designed to ensure environmental compati-\nbility throughout the life cycle of the vehicle.",
+            "page_number": 150,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          }
+        ],
+        "generated_answer": "The Tata Tiago has a Single plate dry friction diaphragm type clutch. \n\nReference: Page 129.",
+        "latency_ms": 7077.28
+      },
+      "scores": {
+        "key_facts_coverage": 0.5,
+        "answer_relevance": 0.8353156447410583,
+        "answer_correctness": 0.775601616411498,
+        "f1_score": 0.606060606060606,
+        "semantic_similarity": 0.9451426267623901,
+        "estimated_cost": 2.479e-05
+      }
+    },
+    {
+      "query_id": "TIAGO_Q10",
+      "query": "What is the ground clearance of Tata Tiago?",
+      "car_model": "Tata Tiago",
+      "ground_truth": {
+        "expected_answer": "The ground clearance of Tata Tiago is 170 mm for both petrol and diesel variants.",
+        "key_facts": [
+          "170 mm",
+          "Same for both variants"
+        ],
+        "relevant_chunks": [
+          "Ground clearance 170 170",
+          "Main chassis dimension (in mm) Ground clearance 170 170"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "MAINTENANCE \n117 \nService Instructions \nThe TATA TIAGO has been manufactured to give you econom-\nical and trouble free performance.",
+            "page_number": 118,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "WARRANTY - TERMS AND CONDITIONS \n147 \nWe WARRANT each TATA TIAGO vehicle and parts thereof \nmanufactured by us to be free from defect in material and \nworkmanship subject to the following terms and conditions: \n1.",
+            "page_number": 148,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.58
+          },
+          {
+            "text": "Contact a nearest TATA MOTORS \nAuthorised Service Centre.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.55
+          },
+          {
+            "text": "in mm as \nper IS:12222 \n9800 \n9800 \nMinimum Turning Clearance circle dia.",
+            "page_number": 131,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.55
+          },
+          {
+            "text": "1800 209 7979 \nYou can also approach nearest TATA MOTORS dealer.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.51
+          },
+          {
+            "text": "In case of any frontal damage to \nyour vehicle or any maintenance \nrequired to be performed should \nbe done by TATA MOTORS Author-\nised Service Centre only.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "3 \n \nDear Customer, \n \nWelcome to the TATA MOTORS family.",
+            "page_number": 4,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "TATA MOTORS 24X7 Roadside Assistance Program offers tech-\nnical help in the event of a breakdown.",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Cen-\ntre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Contact a TATA \nMOTORS \nAuthorized \nService \nCentre.",
+            "page_number": 77,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "The information in this manual shall not be copied, translated or otherwise reproduced, in whole or in \npart, without written permission from TATA MOTORS.",
+            "page_number": 5,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "When you \nhave a road network that spans wide \narea, the probability of a breakdown \nhappening within hailing distance of a \nTATA MOTORS Authorized Workshop is \nvery low.",
+            "page_number": 102,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre \nimmediately.",
+            "page_number": 44,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "Contact a TATA MOTORS Authorised Service Centre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "Contact a TATA \nMOTORS Authorised Service Centre immediately.",
+            "page_number": 45,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/tiago_manual.pdf",
+            "relevance_score": 0.37
+          }
+        ],
+        "generated_answer": "Unfortunately, the provided manual excerpts do not contain information about the ground clearance of the Tata Tiago.",
+        "latency_ms": 6083.13
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8979619741439819,
+        "answer_correctness": 0.5758629242579142,
+        "f1_score": 0.3333333333333333,
+        "semantic_similarity": 0.8183925151824951,
+        "estimated_cost": 2.067e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q1",
+      "query": "How do I check the engine oil level in MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "To check the engine oil level in MG Astor: Check the oil level weekly, ideally with the engine cold and car on level ground. If the engine is warm, wait at least five minutes after switching off before checking. Withdraw the dipstick and wipe off the oil. Slowly insert the oil dipstick and pull it out to check the level - it should not be lower than the MIN mark. If needed, screw off the oil filler cap and refill to maintain level between MAX and MIN marks. Wait 5 minutes and recheck, adding oil if necessary. Do not overfill. Ensure dipstick is inserted and oil filler cap is fully secured.",
+        "key_facts": [
+          "Check weekly",
+          "Engine cold, level ground",
+          "Wait 5 minutes if engine warm",
+          "Wipe dipstick clean",
+          "Level between MIN and MAX",
+          "Do not overfill",
+          "Secure cap after filling"
+        ],
+        "relevant_chunks": [
+          "Check the oil level weekly and top up with oil when necessary. Ideally, the oil level should be checked with the engine cold and the car resting on level ground. However, if the engine is running and already getting warm, wait for at least five minutes after switching off the START/STOP Switch before checking the level.",
+          "Withdraw the dipstick and wipe off the oil on it. Slowly insert the oil dipstick and pull it out again to check the oil level; the oil level shall not be lower than the MIN mark on the oil dipstick.",
+          "Screw off the oil filler cap and refill the oil to maintain the oil level between the MAX mark and MIN mark on the oil dipstick. Wait for 5 minutes and then recheck the oil level, add an appropriate amount of oil if necessary – DO NOT OVERFILL!"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "1.3L Turbocharged Engine\n1.5L Engine\nCheck the oil level weekly and top up with oil \nwhen necessary.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.99
+          },
+          {
+            "text": "As \nsoon as safety permits, stop \nthe car, switch off the engine \nand check the engine oil level.",
+            "page_number": 27,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.73
+          },
+          {
+            "text": "As \nsoon as safety permits, \nstop the car, switch off \nthe engine and check the \nengine oil level.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.73
+          },
+          {
+            "text": "Note: The engine oil level should be \nchecked more frequently if the car is \ndriven for prolonged periods at high \nspeeds.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.65
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.57
+          },
+          {
+            "text": "207\n2 \t Slowly insert the oil dipstick and pull it \nout again to check the oil level; the oil \nlevel shall not be lower than the “MIN” \nmark on the oil dipstick. 3 \t Screw off the oil filler cap and refill the \noil to maintain the oil level between the \n“MAX” mark and “MIN”mark on the oil \ndipstick.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.57
+          },
+          {
+            "text": "Engine Oil Level Check and Top Up\n \t Driving the vehicle with the \nengine oil level ABOVE the \nupper mark, or BELOW the \nlower mark on the dipstick, will \ndamage the engine.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Ideally, the oil level should \nbe checked with the engine cold and the \ncar resting on level ground.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "Find \nyour \nnearest \nMG \nauthorized \ndealer \nby \nvisiting \nwww.mgmotor.co.in/tools/dealers\nI confirm that the vehicle has been inspected by me and delivered to my \nsatisfaction.",
+            "page_number": 251,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.4
+          },
+          {
+            "text": "Please contact MG Authorized Workshop for exact specification of lubes / oils / fluids in your vehicle.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Engine Oil Specification\nUse the engine oil recommended and \ncertified by the manufacturer.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "IMPORTANT\nCheck the engine oil level more frequently \nif the vehicle is driven at high speed for \nprolonged periods.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.27
+          },
+          {
+            "text": "Find your \nnearest MG authorized dealer by visiting \nwww.mgmotor.co.in/tools/dealers.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.25
+          },
+          {
+            "text": "Please contact authorised MG Dealer \nfor feature of your vehicle.",
+            "page_number": 16,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.21
+          }
+        ],
+        "generated_answer": "To check the engine oil level in your MG Astor, follow these steps:\n\n1. Stop the car as soon as it is safe to do so (refer to Page 27 and Page 21).\n2. Switch off the engine.\n3. Ensure the car is on level ground (refer to Page 208).\n4. Let the engine cool down (ideally, check the oil level with a cold engine, refer to Page 208).\n5. Slowly insert the oil dipstick and pull it out again to check the oil level (refer to Page 209).\n6. The oil level should not be lower than the \"MIN\" mark on the oil dipstick (refer to Page 209).\n\nRemember to check the oil level more frequently if you drive at high speeds for prolonged periods (refer to Page 203 and Page 209).",
+        "latency_ms": 7308.89
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.7403911352157593,
+        "answer_correctness": 0.631318107457228,
+        "f1_score": 0.4225352112676056,
+        "semantic_similarity": 0.8401010036468506,
+        "estimated_cost": 3.5325000000000005e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q2",
+      "query": "What engine oil specification should I use for MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "For MG Astor, use the engine oil recommended and certified by the manufacturer. Refer to 'Recommended Fluids and Capacities' in the Technical Data section for specific specifications. Do not use oil additives not applicable to the car as they may damage the engine. Only use oil additives certified by the manufacturer - consult your local Authorised Dealer for details.",
+        "key_facts": [
+          "Use manufacturer recommended oil",
+          "Refer to Technical Data section",
+          "Check Recommended Fluids and Capacities",
+          "Do not use unapproved additives",
+          "Consult dealer for certified additives"
+        ],
+        "relevant_chunks": [
+          "Use the engine oil recommended and certified by the manufacturer. Refer to Recommended Fluids and Capacities in Technical Data section.",
+          "Do not use the oil additives not applicable to the car, or else the engine may be damaged. You are recommended to use the oil additives certified by the manufacturer, please consult your local Authorised Dealer for details."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "Engine Oil Specification\nUse the engine oil recommended and \ncertified by the manufacturer.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 1.0
+          },
+          {
+            "text": "1.3L Turbocharged Engine\n1.5L Engine\nCheck the oil level weekly and top up with oil \nwhen necessary.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.7
+          },
+          {
+            "text": "In normal temperature, we advise you to use \nthe SAE\n5W-30 engine oil recommended by the \nmanufacturer. If you are using your vehicle in an extreme \ncold region, we advise you to use the SAE \n0W-30 engine oil recommended by the \nmanufacturer.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "Please contact MG Authorized Workshop for exact specification of lubes / oils / fluids in your vehicle.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.59
+          },
+          {
+            "text": "228\nRecommended Fluids and Capacities\nName\nGrade\nCapacity\nVTi - TECH (5MT)\nVTi - TECH (CVT)\n220 TURBO (6AT)\nEngine oil (after-sales \nreplacement), L\nC2 5W-30\n4.1\n4.6\nEngine Coolant, L\nELC 4600 (GLYCOL OAT)\n5.4\n6.4\nAutomatic Transmission oil, L\nENEOS AW - 1\n-\n6.2\nContinuously variable \nautomatic Transmission oil, L\nShell SL-2100\n-\n6.96\n-\nManual Transmission oil, L\nCastrol BOT503\n1.8\n—\nBrake Fluid, L\nDOT 4\n0.85\nAir conditioning refrigerant, g\nR134a\n540±20\n*Specification may vary depending on vehicle manufacturing date.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "Please use the fuel which is recommended \nand certified by the manufacturer.",
+            "page_number": 133,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "To ensure the best performance of the \nvehicle, please use the ACEA C2 engine oil \nrecommended by the manufacturer.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Find your \nnearest MG authorized dealer by visiting \nwww.mgmotor.co.in/tools/dealers.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.36
+          },
+          {
+            "text": "Please \nconsult an MG Authorised Dealer for more \ndetails.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.35
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.32
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.32
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.32
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 25,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.32
+          }
+        ],
+        "generated_answer": "For the MG Astor, the recommended engine oil specification is SAE 5W-30 in normal temperature conditions (Page 208). However, if you are using your vehicle in an extreme cold region, you should use SAE 0W-30 engine oil (Page 208).\n\nAdditionally, the manual recommends using ACEA C2 engine oil (Page 208). \n\nIt's also mentioned that the exact specification of lubes/oils/fluids in your vehicle can be obtained from an MG Authorized Workshop (Page 230).",
+        "latency_ms": 8599.73
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.7700661420822144,
+        "answer_correctness": 0.4281021019686823,
+        "f1_score": 0.21739130434782608,
+        "semantic_similarity": 0.6388128995895386,
+        "estimated_cost": 3.1282500000000004e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q3",
+      "query": "How do I turn on the indicators in MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "To turn on indicators in MG Astor: Move the lever down to indicate a LEFT turn. Move the lever up to indicate a RIGHT turn. The corresponding green indicator lamp in the instrument pack will flash when the turning signal lamps are working. Rotating the steering wheel will cancel the indicator operation automatically (small movements may not operate self-cancelling). To indicate a lane change, move the lever briefly and release - the indicators will flash three times and then cancel.",
+        "key_facts": [
+          "Lever down for LEFT turn",
+          "Lever up for RIGHT turn",
+          "Green indicator lamp flashes",
+          "Auto-cancels with steering wheel rotation",
+          "Lane change: brief movement, 3 flashes"
+        ],
+        "relevant_chunks": [
+          "Move the lever down to indicate a LEFT turn (1). Move the lever up to indicate a RIGHT turn (2). The corresponding GREEN indicator lamp in the instrument pack will flash when the turning signal lamps are working.",
+          "Rotating the steering wheel will cancel the indicator operation (small movements of the steering wheel may not operate the self cancelling). To indicate a lane change, move the lever briefly and release, the indicators will flash three times and then cancel."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "Refer to “Warning Lights \nand Indicators” in “Instruments and Controls” \nsection.",
+            "page_number": 147,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "38\nDirection Indicators\nMove the lever down to indicate a LEFT turn \n(1). Move the lever up to indicate a RIGHT \nturn (2).",
+            "page_number": 40,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.82
+          },
+          {
+            "text": "•\t\nIn the setting interface, turn on the \nturning assistant display function.",
+            "page_number": 178,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.66
+          },
+          {
+            "text": "•\t\nWhilst in the ACC state, pressing \nthe START/STOP Switch without the \nfootbrake or clutch pedal being applied \nwill place the system in the ON state, the \ngreen indicator will illuminate.",
+            "page_number": 125,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.63
+          },
+          {
+            "text": "2\nAs shown in the diagram,hold \nMG button for about 3s until the \nnotification light turns on.",
+            "page_number": 85,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "2\t\nGently press the SET button on the end \nof the adaptive cruise control lever, the \nindicator lamp in the instrument pack will \nchange to yellow.",
+            "page_number": 169,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.54
+          },
+          {
+            "text": "Lights and Indicators’ in the ‘Instruments and \nControls’ chapter).",
+            "page_number": 96,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "•\t\nPressing \nthe \nSTART/STOP \nSwitch \nwithout the footbrake or clutch pedal \nbeing applied whilst the engine is OFF will \nplace the system in the ACC state, this \nwill illuminate the yellow indicator in the \nswitch button.",
+            "page_number": 125,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "•\t\nPull the EPB switch upward until the \nindicator in the EPB switch illuminates. •\t\nIf the indicator in the EPB switch and \nthe indicator in the instrument pack \nilluminates, the EPB is applied.",
+            "page_number": 154,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "To indicate a lane change, move \nthe lever briefly and release, the indicators \nwill flash three times and then cancel.",
+            "page_number": 40,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "The indicator will go \noff and the system will return to the previous \nstate.",
+            "page_number": 62,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "The operational status displays are as follows:\nIndicator Off (OFF)\n•\t\nThe engine is shut off in this position.",
+            "page_number": 125,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "The indicator illuminates \nin the instrument panel when the rear fog \nlamp is on.",
+            "page_number": 39,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "The indicator \nilluminates in the instrument panel when the \nfront fog lamps are on.",
+            "page_number": 39,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.39
+          },
+          {
+            "text": "Note:  The highlighted letters or numbers \nin the information centre indicate the \nselected gear or mode.",
+            "page_number": 134,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.38
+          }
+        ],
+        "generated_answer": "To turn on the indicators in the MG Astor, follow these steps:\n\n1. Move the lever down to indicate a LEFT turn (Page 40).\n2. Move the lever up to indicate a RIGHT turn (Page 40).\n3. To indicate a lane change, move the lever briefly and release (Page 40).\n\nNote: The manual excerpts do not provide a comprehensive guide on how to turn on the indicators, but they do provide specific instructions for turning on the direction indicators for left and right turns, as well as for indicating a lane change.",
+        "latency_ms": 7245.98
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.755078911781311,
+        "answer_correctness": 0.6600167430364169,
+        "f1_score": 0.4230769230769231,
+        "semantic_similarity": 0.8969565629959106,
+        "estimated_cost": 3.217e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q4",
+      "query": "What is the coolant specification for MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "For MG Astor, use the coolant which is recommended and certified by the manufacturer. Refer to 'Recommended Fluids and Capacities' in the Technical Data section for specific specifications. Do not add corrosion inhibitors or other additives to the cooling system as they may severely disrupt the efficiency of the system and cause parts damage. Coolant is poisonous and can be fatal if swallowed - keep containers sealed and away from children.",
+        "key_facts": [
+          "Use manufacturer recommended coolant",
+          "Refer to Technical Data section",
+          "No corrosion inhibitors or additives",
+          "Can disrupt system efficiency",
+          "Coolant is poisonous",
+          "Keep away from children"
+        ],
+        "relevant_chunks": [
+          "Please use the coolant which is recommended and certified. Please refer to Recommended Fluids and Capacities in the Technical Data section.",
+          "The addition of corrosion inhibitors or other additives to the cooling system of this car may severely disrupt the efficiency of the system and cause parts damage.",
+          "Coolant is poisonous and can be fatal if swallowed - keep coolant containers sealed and out of the reach of children."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "Coolant Specification\nPlease use the coolant which is recommended \nand certified.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 1.0
+          },
+          {
+            "text": "If the \ncoolant level is below the “MIN” mark, open \nMaintenance\n6",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "The coolant level should not be \nhigher than the “MAX” mark.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.47
+          },
+          {
+            "text": "208\nthe coolant expansion tank cap and top up \ncoolant.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.4
+          },
+          {
+            "text": "Please \nconsult an MG Authorised Dealer for more \ndetails.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "228\nRecommended Fluids and Capacities\nName\nGrade\nCapacity\nVTi - TECH (5MT)\nVTi - TECH (CVT)\n220 TURBO (6AT)\nEngine oil (after-sales \nreplacement), L\nC2 5W-30\n4.1\n4.6\nEngine Coolant, L\nELC 4600 (GLYCOL OAT)\n5.4\n6.4\nAutomatic Transmission oil, L\nENEOS AW - 1\n-\n6.2\nContinuously variable \nautomatic Transmission oil, L\nShell SL-2100\n-\n6.96\n-\nManual Transmission oil, L\nCastrol BOT503\n1.8\n—\nBrake Fluid, L\nDOT 4\n0.85\nAir conditioning refrigerant, g\nR134a\n540±20\n*Specification may vary depending on vehicle manufacturing date.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.28
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.28
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.27
+          },
+          {
+            "text": "Engine Coolant Temperature \nGauge (3)\nIndicates the engine coolant temperature.",
+            "page_number": 17,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.27
+          },
+          {
+            "text": "Engine Coolant Temperature \nGauge (3)\nIndicates the engine coolant temperature.",
+            "page_number": 18,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.27
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.25
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.25
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.25
+          }
+        ],
+        "generated_answer": "The coolant specification for MG Astor is ELC 4600 (GLYCOL OAT). \n\nReference: Page 210 and Page 213.",
+        "latency_ms": 6926.29
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8477442860603333,
+        "answer_correctness": 0.3847508585616334,
+        "f1_score": 0.1643835616438356,
+        "semantic_similarity": 0.6051181554794312,
+        "estimated_cost": 2.0150000000000002e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q5",
+      "query": "What is the recommended engine oil capacity for MG Astor 220 TURBO variant?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The recommended engine oil capacity for MG Astor 220 TURBO (6AT) variant is 4.6 litres for after-sales replacement. The specification is C2 5W-30.",
+        "key_facts": [
+          "4.6 litres",
+          "220 TURBO (6AT) variant",
+          "C2 5W-30 specification",
+          "After-sales replacement"
+        ],
+        "relevant_chunks": [
+          "Engine oil (after-sales replacement), L C2 5W-30 4.1 4.6",
+          "Name Grade Capacity VTi - TECH (5MT) VTi - TECH (CVT) 220 TURBO (6AT) Engine oil (after-sales replacement), L C2 5W-30 - - 4.6"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "228\nRecommended Fluids and Capacities\nName\nGrade\nCapacity\nVTi - TECH (5MT)\nVTi - TECH (CVT)\n220 TURBO (6AT)\nEngine oil (after-sales \nreplacement), L\nC2 5W-30\n4.1\n4.6\nEngine Coolant, L\nELC 4600 (GLYCOL OAT)\n5.4\n6.4\nAutomatic Transmission oil, L\nENEOS AW - 1\n-\n6.2\nContinuously variable \nautomatic Transmission oil, L\nShell SL-2100\n-\n6.96\n-\nManual Transmission oil, L\nCastrol BOT503\n1.8\n—\nBrake Fluid, L\nDOT 4\n0.85\nAir conditioning refrigerant, g\nR134a\n540±20\n*Specification may vary depending on vehicle manufacturing date.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 1.0
+          },
+          {
+            "text": "227\nVehicle\nParameter\nVTi - TECH (5MT) / CVT\n220 TURBO (6AT)\nBore × Stroke, mm × mm\n75×84.8\n80×89.4\nCapacity, Litres\n1.498\n1.349\nCompression Ratio\n11.5:1\n10:1\nFuel Type\nINDIA 91 unleaded gasoline and above\nINDIA 91 unleaded gasoline and above\nTechnical Data\nMajor Parameters of Engine\n7",
+            "page_number": 229,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.93
+          },
+          {
+            "text": "1.3L Turbocharged Engine\n1.5L Engine\nCheck the oil level weekly and top up with oil \nwhen necessary.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.86
+          },
+          {
+            "text": "Engine Oil Specification\nUse the engine oil recommended and \ncertified by the manufacturer.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.75
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.54
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.48
+          },
+          {
+            "text": "Please \nconsult an MG Authorised Dealer for more \ndetails.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.41
+          },
+          {
+            "text": "Refer to \n“Recommended Fluids and Capacities” in the \n“Technical Data” section.",
+            "page_number": 212,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "Please contact MG Authorized Workshop for exact specification of lubes / oils / fluids in your vehicle.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.35
+          },
+          {
+            "text": "Please use the fuel which is recommended \nand certified by the manufacturer.",
+            "page_number": 133,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Refer to \n“Recommended Fluids and Capacities” in \n“Technical Data” section.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 25,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          }
+        ],
+        "generated_answer": "The recommended engine oil capacity for MG Astor 220 TURBO variant is 4.6 liters, as per the manual excerpt on Page 230: 228, under \"Recommended Fluids and Capacities\".",
+        "latency_ms": 7634.8
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8813806176185608,
+        "answer_correctness": 0.7265823813194924,
+        "f1_score": 0.553191489361702,
+        "semantic_similarity": 0.8999732732772827,
+        "estimated_cost": 2.55975e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q6",
+      "query": "What is the engine capacity and power output of MG Astor 1.5L engine?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The MG Astor 1.5L engine (VTi-TECH) has a capacity of 1.498 litres with bore x stroke of 75mm x 84.8mm. It has a compression ratio of 11.5:1 and uses INDIA 91 unleaded gasoline and above as fuel type.",
+        "key_facts": [
+          "1.498 litres capacity",
+          "Bore x stroke: 75mm x 84.8mm",
+          "Compression ratio 11.5:1",
+          "INDIA 91 unleaded gasoline"
+        ],
+        "relevant_chunks": [
+          "Vehicle Parameter VTi - TECH (5MT) / CVT 220 TURBO (6AT) Bore × Stroke, mm × mm 75×84.8 80×89.4 Capacity, Litres 1.498 1.349 Compression Ratio 11.5:1 10:1 Fuel Type INDIA 91 unleaded gasoline and above"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "1.3L Turbocharged Engine\n1.5L Engine\nCheck the oil level weekly and top up with oil \nwhen necessary.",
+            "page_number": 208,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 1.0
+          },
+          {
+            "text": "227\nVehicle\nParameter\nVTi - TECH (5MT) / CVT\n220 TURBO (6AT)\nBore × Stroke, mm × mm\n75×84.8\n80×89.4\nCapacity, Litres\n1.498\n1.349\nCompression Ratio\n11.5:1\n10:1\nFuel Type\nINDIA 91 unleaded gasoline and above\nINDIA 91 unleaded gasoline and above\nTechnical Data\nMajor Parameters of Engine\n7",
+            "page_number": 229,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.67
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "2.7.6.5\t Use of parts other than MG MOTOR \nGenuine Parts. 2.7.6.6\t Any device and / or accessories not \nSupplied / Fitted by MG MOTOR.",
+            "page_number": 239,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "www.mgmotor.co.in\n1800 100 6464\nMG Motor India Pvt.",
+            "page_number": 266,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.45
+          },
+          {
+            "text": "2.7.6.8\t Parts used in applications of which \nthey were not designed or not \napproved by MG MOTOR.",
+            "page_number": 239,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.44
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.42
+          },
+          {
+            "text": "Please \nconsult an MG Authorised Dealer for more \ndetails.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.35
+          },
+          {
+            "text": "See ‘Major \nParameters of Engine ’in ‘Technical Data’.",
+            "page_number": 133,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.35
+          },
+          {
+            "text": "Find \nyour \nnearest \nMG \nauthorized \ndealer \nby \nvisiting \nwww.mgmotor.co.in/tools/dealers\nI confirm that the vehicle has been inspected by me and delivered to my \nsatisfaction.",
+            "page_number": 251,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Find your \nnearest MG authorized dealer by visiting \nwww.mgmotor.co.in/tools/dealers.",
+            "page_number": 11,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "6\t\nMG MOTOR reserves the right to \nmake any change in design or make \nany improvement in the design, \nstructure, technology etc.",
+            "page_number": 243,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "228\nRecommended Fluids and Capacities\nName\nGrade\nCapacity\nVTi - TECH (5MT)\nVTi - TECH (CVT)\n220 TURBO (6AT)\nEngine oil (after-sales \nreplacement), L\nC2 5W-30\n4.1\n4.6\nEngine Coolant, L\nELC 4600 (GLYCOL OAT)\n5.4\n6.4\nAutomatic Transmission oil, L\nENEOS AW - 1\n-\n6.2\nContinuously variable \nautomatic Transmission oil, L\nShell SL-2100\n-\n6.96\n-\nManual Transmission oil, L\nCastrol BOT503\n1.8\n—\nBrake Fluid, L\nDOT 4\n0.85\nAir conditioning refrigerant, g\nR134a\n540±20\n*Specification may vary depending on vehicle manufacturing date.",
+            "page_number": 230,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          },
+          {
+            "text": "In case of any query, please feel free to call our 24 hours Helpline at 1800 100 6464 or email us at: pulsehub@mgmotor.co.in\nFind your nearest MG authorized dealer by visiting www.mgmotor.co.in/tools/dealers\nSAFE and HAPPY DRIVING\nFrom\nTeam MG India",
+            "page_number": 3,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.26
+          },
+          {
+            "text": "3.10.3\t\nBy way of consideration for the parts \nsupplied by MG MOTOR under the \nPaintwork Warranty, parts replaced \nunder this warranty legally become \nthe property of MG MOTOR.",
+            "page_number": 243,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.22
+          }
+        ],
+        "generated_answer": "Unfortunately, the manual excerpts provided do not contain enough information to determine the power output of the MG Astor 1.5L engine. However, we can find the engine capacity.\n\nAccording to Page 229, the engine capacity of the 1.5L engine is 1.498 litres.",
+        "latency_ms": 9871.96
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.9076563715934753,
+        "answer_correctness": 0.5120357275009155,
+        "f1_score": 0.25,
+        "semantic_similarity": 0.774071455001831,
+        "estimated_cost": 3.34225e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q7",
+      "query": "What is the tyre pressure specification for MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The tyre pressure specification for MG Astor in cold condition is 230kPa/2.3bar/32psi for both front and rear wheels when unladen. It is recommended that the pressure of spare tyre should be consistent with that of main tyre.",
+        "key_facts": [
+          "230kPa or 2.3bar or 32psi",
+          "Same for front and rear wheels",
+          "Cold condition",
+          "Unladen",
+          "Spare tyre same as main tyre"
+        ],
+        "relevant_chunks": [
+          "Tyre Pressure (Cold) Wheels Unladen Front Wheels 230kPa/2.3bar/32psi Rear Wheels 230kPa/2.3bar/32psi",
+          "It is recommended that the pressure of spare tyre should be consistent with that of main tyre."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "•\t\nTyre Pressures: displays the current \ntyre status for each wheel.",
+            "page_number": 20,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "223\nTechnical Data\nTechnical Data........................................... 223\nTechnical Data Dimensions ................... 224\nWeights....................................................... 226\nMajor Parameters of Engine .................. 227\nRecommended Fluids and Capacities... 228\nWheel Alignment (Unladen) .................. 229\nWheels and Tyres .................................... 229\nTyre Pressure (Cold) .............................. 229\nTechnical Data\n7",
+            "page_number": 225,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.83
+          },
+          {
+            "text": "The tyre pressure label attached to the \nvehicle indicates the correct amount of tyre \ninflation required for your vehicle when the \ntyre is cold.",
+            "page_number": 182,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.78
+          },
+          {
+            "text": "229\nTechnical Data\n Wheel Alignment (Unladen)\nItem\nParameter\nFront\nCamber\n-0°28’±45’\nKingpin Castor\n3°54’±45’\nToe in (Total)\n0°8’±15’\nKingpin Inclination\n11°49’±45’\nRear\nCamber\n-1°15’±45’\nToe in (Total)\n0°24’±20’\nWheels and Tyres\nWheel size\n7J×17\n6.5J×16\nTyre size\n215/55 R17\n215/60 R16\nSpare Tyre\nWheel Rim specification\n6.5J×16\nSpare Tyre specification\n215/60 R16\nTyre Pressure (Cold)\nWheels\nUnladen\nFront Wheels\n230kPa/2.3bar/32psi\nRear Wheels\n230kPa/2.3bar/32psi\nNote: It is recommended that the pressure of spare tyre should be consistent \nwith that of main tyre.",
+            "page_number": 231,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.69
+          },
+          {
+            "text": "216\nTyre Pressure\nIncorrect pressure will cause the abnormal \nwear of the tyre, greatly shorten the service \nlife, and have an adverse effect on the driving \ncharacteristics of the vehicle.",
+            "page_number": 218,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.68
+          },
+          {
+            "text": "If it is necessary to check the tyre pressure \nwhen they are warm, you should expect the \npressure to have increased by 0.3 to 0.4 bar \n(4.35 to 5.8 psi).",
+            "page_number": 218,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "Tyre Life\nCorrect tyre pressure and moderate driving \nstyle can extend tyre life.",
+            "page_number": 217,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "Note: Contact an MG Authorised Dealer \nto replace with a new tyre urgently.",
+            "page_number": 193,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.6
+          },
+          {
+            "text": "TPMS can remind \nyou of low tyre pressure, but it can not \nreplace normal tyre maintenance.",
+            "page_number": 182,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.59
+          },
+          {
+            "text": "Tyre Pressure\n \t Before  a  long  distance  journey, \nthe tyre pressure must be \nchecked.",
+            "page_number": 218,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.56
+          },
+          {
+            "text": "DO \nNOT \ndrive if any tyre is damaged, is \nexcessively worn, or is inflated to \nan incorrect pressure.",
+            "page_number": 218,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "Note: TPMS only warns of low tyre \npressures, it does not re-inflate the tyre.",
+            "page_number": 182,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.49
+          },
+          {
+            "text": "Tyre Pressure Monitoring \nSystem (TPMS) Warning Lamp - \nYellow *\n If this lamp illuminates, it indicates \na tyre pressure is low, please check the tyre \npressures.",
+            "page_number": 32,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.47
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.38
+          },
+          {
+            "text": "•\t\nCheck the pressure of tyres regularly \nwhen they are cold.",
+            "page_number": 217,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          }
+        ],
+        "generated_answer": "The tyre pressure specification for MG Astor is as follows:\n\n- Front Wheels: 230kPa/2.3bar/32psi (unladen)\n- Rear Wheels: 230kPa/2.3bar/32psi (unladen)\n\nPlease refer to Page 231 for the detailed specification.",
+        "latency_ms": 9168.33
+      },
+      "scores": {
+        "key_facts_coverage": 0.2,
+        "answer_relevance": 0.8868924379348755,
+        "answer_correctness": 0.6254698752232317,
+        "f1_score": 0.41509433962264153,
+        "semantic_similarity": 0.835845410823822,
+        "estimated_cost": 3.4092500000000006e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q8",
+      "query": "What is the warranty period for MG Astor battery?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The warranty coverage for 12V/48V Battery in MG Astor is valid for 1 year starting from the Delivery Date shown in the Owner's Manual issued to the Customer. The warranty is provided by the battery manufacturer as per their terms and conditions.",
+        "key_facts": [
+          "1 year warranty",
+          "From delivery date",
+          "12V/48V battery",
+          "Provided by battery manufacturer"
+        ],
+        "relevant_chunks": [
+          "Battery: The warranty coverage for 12V / 48V Battery is valid for 1 year starting from the Delivery Date shown in the Owner's Manual issued to the Customer and shall be provided by the battery manufacturer as per their terms and conditions."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "2.6.1\t\nBattery: The warranty coverage \nfor 12V / 48V Battery is valid for \n1 year starting from the Delivery \nDate \nshown \nin \nthe \nOwner’s \nManual issued to the Customer and \nshall be provided by the battery \nmanufacturer as per their terms and \nconditions.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.91
+          },
+          {
+            "text": "The \nMG \nMOTOR \nAnti-\ncorrosion Warranty:\n3.1\t\nDuration of the Anti-Corrosion \nWarranty: This warranty will apply \nfrom the delivery date given on the \nOwner’s Manual for a period of:\n\t\n•\t Personal Registration - \n\t\n\t\n3 years or Unlimited kilometers \n(whichever is earlier)\n\t\n•\t Commercial Registration - \n\t\n\t\n3 \nyears \nor \n1,00,000 \nkms \n(whichever is earlier). 3.2\t\nGeographical \nCoverage: \nThe \ngeographical coverage of the Anti-\nCorrosion Warranty is identical \nto that for the MG MOTOR New \nVehicle Warranty.",
+            "page_number": 240,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.83
+          },
+          {
+            "text": "The MG MOTOR New Vehicle \nWarranty\n2.1\t\nDuration of MG MOTOR’S New \nVehicle Warranty: \n\t\nVehicles in the MG MOTOR \nrange, delivered as new from 1st \nApril 2019 to the Customer by an \nauthorized MG MOTOR DEALER, \nare warranted against any material, \nassembly or Manufacturing Defects \nby the Manufacturer. The New \nVehicle shall be covered under a \nWarranty by MG MOTOR for a \nperiod of \n•  \t\nPersonal Registration - 3 years \nor Unlimited kilometers (whichever \nis earlier) \n• \t\nCommercial Registration - \n\t\n3 years or 1,00,000 kms (whichever \nis earlier)\n\t\nMG Motor new vehicle warranty \nstarts from the Delivery Date shown \nin the Owner’s Manual issued to \nthe Customer / First Owner of the \nvehicle upon delivery of the vehicle \npurchased.",
+            "page_number": 237,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "I do abide by MG terms & conditions laid forward for warranty and \nother vehicle maintenance details.",
+            "page_number": 251,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.43
+          },
+          {
+            "text": "235\nMG Motor  \nNew Vehicle Warranty\nTerms & Conditions\nINDIA\n1.",
+            "page_number": 237,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.4
+          },
+          {
+            "text": "2.8\t\nTo be eligible for the MG MOTOR \nNew \nVehicle \nWarranty, \nthe \nCustomer must:\n2.8.1 \t\ncheck that the Owner’s Manual does \ncontain the Delivery Date of the \nvehicle - their warranty entitlement \nis dependent on this;\n2.8.2 \t\ncontact any workshop of the MG \nMOTOR \nAuthorized \nWorkshop \nNetwork – only such Workshop \nhave the authorization for operations \nof this sort;\n2.8.3\t\nshow the duly completed Owner’s \nManual, as proof of entitlement to the \nwarranty and that the maintenance \noperations recommended by the \nManufacturer have been carried out;\n2.8.4 \t\nhave the defect covered by the MG \nMOTOR New Vehicle Warranty \nconfirmed as soon as possible, by a \nMG MOTOR authorized workshop \nin writing.",
+            "page_number": 240,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "This warranty is the entire Warranty \ngiven by MG MOTOR and no \nAuthorized Dealer of MG Motor \nor its or his agent or employee is \nauthorized to extend or enlarge this \nwarranty and no Authorized Dealer \nof MG Motor or its or his agent or \nemployee is authorized to make any \noral warranty on MG MOTOR’s \nbehalf.",
+            "page_number": 243,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "MG Motor New Vehicle Warranty\n5.2\t\nRetention of maintenance service \nrecords.",
+            "page_number": 243,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Please go to an MG Authorised \nDealer to remove and install the battery.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "3.5.7\t\nThe application of the MG MOTOR \nAnti-Corrosion Warranty is also \nsubject to bodywork and sub-\nframe repairs being carried out \nin accordance with MG MOTOR \nrecommendations.",
+            "page_number": 242,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          },
+          {
+            "text": "3.5.9\t\nParts replaced under the Anti-\nCorrosion Warranty legally become \nthe property of MG MOTOR.",
+            "page_number": 242,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          },
+          {
+            "text": "3.7\t\nGeographical \nCoverage: \nThe \ngeographical \ncoverage \nof \nthe \nPaintwork Warranty is identical \nto that for the MG MOTOR New \nVehicle Warranty. 3.8\t\nPaintwork \nWarranty \nfield \nof \napplication: \n3.8.1\t\nThis warranty covers the free repair \nor replacement of components \nwith inherent paintwork defects \n(deterioration of lacquer or finishing \nvarnish, \ndue \nto \nany \nmaterial, \nmanufacturing or application defect) \nacknowledged by the Manufacturer, \nwith the MG MOTOR authorized \nworkshop \ncarrying \nout \nthe \noperation, keeping the Customer \ninformed.",
+            "page_number": 242,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.28
+          },
+          {
+            "text": "5.3\t\nIn order to maintain the validity of \nthis emission warranty, the vehicle \nmust be serviced by Authorized \nMG Dealer in accordance with the \nOwner’s Manual.",
+            "page_number": 243,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.28
+          },
+          {
+            "text": "3.5.3\t\nApplication of the MG MOTOR \nAnti-Corrosion Warranty is subject \nto the anti-corrosion tests on the \nbodywork and sub-frame.",
+            "page_number": 241,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.27
+          },
+          {
+            "text": "239\n3.3\t\nAnti-Corrosion Warranty field \nof application\n3.3.1\t\nIn addition to the MG MOTOR New \nVehicle Warranty, MG MOTOR \nguarantees the bodywork and sub \nframe of MG MOTOR vehicle \nSchedule I from perforation from the \ninterior, due to steel panel corrosion \ncaused by a manufacturing, material \nor protective product application \ndefect.",
+            "page_number": 241,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.26
+          }
+        ],
+        "generated_answer": "The warranty period for the MG Astor battery is 1 year starting from the Delivery Date shown in the Owner's Manual, as per the manufacturer's terms and conditions (Page 238).",
+        "latency_ms": 13822.44
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8576622009277344,
+        "answer_correctness": 0.7712470827431515,
+        "f1_score": 0.6896551724137931,
+        "semantic_similarity": 0.8528389930725098,
+        "estimated_cost": 5.734250000000001e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q9",
+      "query": "What is the ground clearance of MG Astor 220 TURBO variant?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The ground clearance of MG Astor 220 TURBO (6AT) variant is 141 mm in laden condition.",
+        "key_facts": [
+          "141 mm",
+          "220 TURBO (6AT) variant",
+          "Laden condition"
+        ],
+        "relevant_chunks": [
+          "Ground Clearance (mm - Laden condition) 151 152 141",
+          "Item, Units VTi - TECH (5MT) VTi - TECH (CVT) 220 TURBO (6AT) Ground Clearance (mm - Laden condition) 151 152 141"
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "226\nWeights\nParameter\nItem, Units\nVTi - TECH (5MT)\nVTi - TECH (CVT)\n220 TURBO (6AT)\nPerson in Cab, person\n5\n5\n5\nUnladen Vehicle weight \n(kerb), kg\n1245 / 1264 / 1271 / 1303\n1301 / 1315 / 1349\n1324 / 1355\nGross Vehicle weight, \nkg\n1678 / 1696 / 1703 / 1736\n1733 / 1748 / 1780\n1756 / 1788\nUnladen Front Axle \nweight, kg\n740 / 752 / 755 / 771\n785 / 794 / 811\n799 / 814\nUnladen Rear Axle \nweight, kg\n505 / 511 / 516 / 532\n516 / 521 / 538\n525 / 541\nLaden Front Axle \nweight, kg\n847 / 859 / 862 / 878\n892 / 901 / 917\n905 / 921\nLaden Rear Axle \nweight, kg\n831 / 837 / 842 / 858\n841 / 847 / 863\n851 / 867\nGround Clearance  \n(mm - Laden condition)\n151\n152\n141\nTechnical Data",
+            "page_number": 228,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "Hence, it is \nrequested to contact your nearest \nMG MOTOR Dealer for more \ndetails.",
+            "page_number": 238,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.8
+          },
+          {
+            "text": "For further information, \nrefer to an MG Authorised \nDealer.",
+            "page_number": 203,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.59
+          },
+          {
+            "text": "Please \nconsult an MG Authorised Dealer for more \ndetails.",
+            "page_number": 213,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.54
+          },
+          {
+            "text": "227\nVehicle\nParameter\nVTi - TECH (5MT) / CVT\n220 TURBO (6AT)\nBore × Stroke, mm × mm\n75×84.8\n80×89.4\nCapacity, Litres\n1.498\n1.349\nCompression Ratio\n11.5:1\n10:1\nFuel Type\nINDIA 91 unleaded gasoline and above\nINDIA 91 unleaded gasoline and above\nTechnical Data\nMajor Parameters of Engine\n7",
+            "page_number": 229,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": "225\nItem, Units\nParameter\nFront wheel track, mm\n1526\nRear wheel track, mm\n1536\nMinimum ground clearance (laden), mm\n154\nMinimum turning circle diameter, m\n11.2\nFuel tank capacity, l\n48L (MT/CVT) / 45L (AT)\nNote: Vehicle length not including the license plate.",
+            "page_number": 227,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.5
+          },
+          {
+            "text": "2.7.6.8\t Parts used in applications of which \nthey were not designed or not \napproved by MG MOTOR.",
+            "page_number": 239,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.48
+          },
+          {
+            "text": "191\nNote: DO NOT stand on the handle of \nthe wheel bolt spanner or use extension \ntube on the handle of the spanner.",
+            "page_number": 193,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.46
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.33
+          },
+          {
+            "text": "Find \nyour \nnearest \nMG \nauthorized \ndealer \nby \nvisiting \nwww.mgmotor.co.in/tools/dealers\nI confirm that the vehicle has been inspected by me and delivered to my \nsatisfaction.",
+            "page_number": 251,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.31
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          },
+          {
+            "text": "Please consult an MG \nAuthorised \nDealer \nas \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 24,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          },
+          {
+            "text": "Please consult an \nMG Authorised Dealer as \nsoon as possible.",
+            "page_number": 25,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.3
+          }
+        ],
+        "generated_answer": "According to the manual excerpt on Page 227, the Minimum ground clearance (laden) for the MG Astor 220 TURBO variant is 141 mm.",
+        "latency_ms": 10443.2
+      },
+      "scores": {
+        "key_facts_coverage": 0.3333333333333333,
+        "answer_relevance": 0.9005986452102661,
+        "answer_correctness": 0.7157381595791996,
+        "f1_score": 0.5405405405405405,
+        "semantic_similarity": 0.8909357786178589,
+        "estimated_cost": 2.969e-05
+      }
+    },
+    {
+      "query_id": "ASTOR_Q10",
+      "query": "How should I check the coolant level in MG Astor?",
+      "car_model": "MG Astor",
+      "ground_truth": {
+        "expected_answer": "The cooling system should be checked weekly when the cooling system is cold and with the car resting on level ground. Do not remove the coolant pressure cap when the cooling system is hot as escaping steam or hot coolant could cause serious injury. If the coolant level is below the MIN mark, open the coolant expansion tank cap and top up coolant. The coolant level should not be higher than the MAX mark. Prevent coolant from coming into contact with the vehicle body when topping up as coolant will damage paint.",
+        "key_facts": [
+          "Check weekly when cold",
+          "Level ground required",
+          "Do not remove cap when hot",
+          "Top up if below MIN mark",
+          "Do not exceed MAX mark",
+          "Prevent coolant contact with body"
+        ],
+        "relevant_chunks": [
+          "DO NOT remove the coolant pressure cap when the cooling system is hot - escaping steam or hot coolant could cause serious injury.",
+          "The cooling system should be checked weekly when the cooling system is cold and with the car resting on level ground. If the coolant level is below the MIN mark, open the coolant expansion tank cap and top up coolant. The coolant level should not be higher than the MAX mark.",
+          "Prevent coolant from coming into contact with the vehicle body when topping up. Coolant will damage paint."
+        ]
+      },
+      "system_response": {
+        "retrieved_chunks": [
+          {
+            "text": "The coolant level should not be \nhigher than the “MAX” mark.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.97
+          },
+          {
+            "text": "If the \ncoolant level is below the “MIN” mark, open \nMaintenance\n6",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "Coolant Specification\nPlease use the coolant which is recommended \nand certified.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.61
+          },
+          {
+            "text": "If the coolant level falls appreciably during a \nshort period, and you suspect that there may \nbe a leak, please seek an Authorised Dealer \nfor service.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.53
+          },
+          {
+            "text": "Engine Coolant Temperature \nGauge (3)\nIndicates the engine coolant temperature.",
+            "page_number": 17,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "Engine Coolant Temperature \nGauge (3)\nIndicates the engine coolant temperature.",
+            "page_number": 18,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.37
+          },
+          {
+            "text": "For cooling system \nissues please consult an Authorised \nDealer.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.34
+          },
+          {
+            "text": "Warning  \nMessage\nProcedure\nEngine \nCoolant\nTemperature \nHigh\nHigh \nengine \ncoolant \ntemperature \ncould \nresult \nin severe damage.",
+            "page_number": 27,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.25
+          },
+          {
+            "text": "If calibration is required, \nplease seek an MG Authorised Dealer.",
+            "page_number": 165,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.24
+          },
+          {
+            "text": "If calibration is required, \nplease seek an MG Authorised Dealer.",
+            "page_number": 166,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.24
+          },
+          {
+            "text": "The cooling system should be checked \nweekly when the cooling system is cold and \nwith the car resting on level ground.",
+            "page_number": 209,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.23
+          },
+          {
+            "text": "High engine coolant temperature could \nresult in severe damage.",
+            "page_number": 31,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.21
+          },
+          {
+            "text": "Engine Coolant\nTemperature \nHigh\nHigh \nengine \ncoolant \ntemperature \ncould \nresult in severe damage.",
+            "page_number": 21,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.21
+          },
+          {
+            "text": "208\nthe coolant expansion tank cap and top up \ncoolant.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.19
+          },
+          {
+            "text": "Prevent \nthe \ncoolant \nfrom \ncoming into contact with the \nskin or eyes.",
+            "page_number": 210,
+            "source_file": "/Users/santhosh/Documents/study_projects/ringcentral_assessment/pdfs/astor_manual.pdf",
+            "relevance_score": 0.18
+          }
+        ],
+        "generated_answer": "To check the coolant level in your MG Astor, follow these steps:\n\n1. Ensure the car is on level ground and the cooling system is cold.\n2. Locate the coolant expansion tank (refer to the manual for its location, but it's not specified in the provided excerpts).\n3. Check the coolant level against the \"MIN\" and \"MAX\" marks on the tank. \n4. If the level is below the \"MIN\" mark, refer to page 209, Maintenance 6, for further instructions.\n\nRemember to check the coolant level weekly, as recommended on page 209.",
+        "latency_ms": 5074.84
+      },
+      "scores": {
+        "key_facts_coverage": 0.0,
+        "answer_relevance": 0.8687376976013184,
+        "answer_correctness": 0.41342939487819014,
+        "f1_score": 0.27586206896551724,
+        "semantic_similarity": 0.550996720790863,
+        "estimated_cost": 2.5805e-05
+      }
+    }
+  ],
+  "metrics": {
+    "retriever": {
+      "hit_rate": 0.6,
+      "avg_recall": 0.467,
+      "avg_ndcg": 0.464,
+      "mrr": 0.438,
+      "map": 0.316
+    },
+    "generator": {
+      "avg_faithfulness": null,
+      "avg_key_facts_coverage": 0.173,
+      "avg_answer_relevance": 0.853
+    },
+    "end_to_end": {
+      "avg_context_recall": null,
+      "avg_answer_correctness": 0.629,
+      "avg_latency_ms": 7294.77,
+      "min_latency_ms": 534.53,
+      "max_latency_ms": 15970.97,
+      "p95_latency_ms": 13929.87,
+      "p99_latency_ms": 15562.75,
+      "estimated_cost_per_query": 3.2e-05
+    }
+  }
+}
