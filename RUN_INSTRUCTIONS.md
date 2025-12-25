@@ -78,7 +78,7 @@ chmod +x run_docker.sh
 
 **Pull Image:**
 ```bash
-docker pull <your-dockerhub-username>/car-manual-rag:latest
+docker pull sandyai2022/car-manual-rag:assessment
 ```
 
 **Run Container:**
@@ -93,7 +93,7 @@ docker run -d \
   -e WEAVIATE_URL="${WEAVIATE_URL}" \
   -e WEAVIATE_API_KEY="${WEAVIATE_API_KEY}" \
   -e GROQ_API_KEY="${GROQ_API_KEY}" \
-  <your-dockerhub-username>/car-manual-rag:latest
+  sandyai2022/car-manual-rag:assessment
 ```
 
 **Manage Container:**
